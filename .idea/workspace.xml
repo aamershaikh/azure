@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f2060aa3-5eb9-4d14-9799-b8ac84a7d96c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/az-cli-scripts/webapp/create.sh" beforeDir="false" afterPath="$PROJECT_DIR$/az-cli-scripts/webapp/create.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/az-cli-scripts/webapp/delete.sh" beforeDir="false" afterPath="$PROJECT_DIR$/az-cli-scripts/webapp/delete.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
