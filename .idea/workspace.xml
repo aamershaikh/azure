@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2060aa3-5eb9-4d14-9799-b8ac84a7d96c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1naftloCVseP5xIhw0T0UDxPLB1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.6091954" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2060aa3-5eb9-4d14-9799-b8ac84a7d96c" name="Default Changelist" comment="" />
+      <created>1611633339040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611633339040</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="22" width="1280" height="774" key="#Project_Structure" timestamp="1611633360213">
+      <screen x="0" y="22" width="1280" height="774" />
+    </state>
+    <state x="0" y="22" width="1280" height="774" key="#Project_Structure/0.22.1280.774/-359.-1058.1920.1058@0.22.1280.774" timestamp="1611633360213" />
+    <state x="0" y="96" key="new project wizard" timestamp="1611633372690">
+      <screen x="0" y="22" width="1280" height="774" />
+    </state>
+    <state x="0" y="96" key="new project wizard/0.22.1280.774/-359.-1058.1920.1058@0.22.1280.774" timestamp="1611633372690" />
+  </component>
+</project>
