@@ -1,13 +1,13 @@
 #!/bin/bash
 
 if[ "$1" == "-h" ];
-  echo "appserviceplan takes $1 : resource-group; $2 : name"
-  echo "webapp takes $1 : resource-group; $2 : name; $3 : appserviceplan"
+  echo "appserviceplan takes resource-group; name"
+  echo "webapp takes resource-group; name; appserviceplan"
   exit 0
 fi
 
 #delete a appservice plan in free tier ($1: resource group, $2: plan name, sku is F1)
-az appservice plan delete --resource-group "rg-$1" --name "$2" --sku F1
+az appservice plan delete --resource-group "rg-rg1" --name "myappserviceplan" --sku F1
 
 #delete a webapp
-az webapp delete --resource-group "rg-$1" --name "$2"  --plan "$3"
+az webapp delete --resource-group "rg-rg1" --name "mywebapp"  --plan "myappserviceplan"
