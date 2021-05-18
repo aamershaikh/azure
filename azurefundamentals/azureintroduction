@@ -1,0 +1,94 @@
+1) Azure Fundamentals : AZ900
+        - Describe cloud concepts
+        - Describe core azure services
+        - Describe core solutions and management tools
+        - Describe general and network security features
+        - Describe identity , governance , privance and compliance features
+        - Describe cost management and SLA
+
+
+        What is cloud computing ?
+        - Ability to rent computing resources on demand.
+
+        What is computing resources?
+        - Windows and Linux servers
+        - Unlimited storage
+        - Databases
+        - Queues
+        - Content Delivery network
+        - Batch Processing Jobs
+        - Big Data - Hadoop
+        - Media services
+        - Machine learning
+        - Chat bots
+        - Cognitive services
+        etc 1000+ services
+
+
+***Describe cloud concepts***
+
+- Benefits of cloud computing
+    - Cost savings - both real and accounting
+    - Agility
+    - availability
+    - security
+    - global reach
+    - range of ready on demand services
+    - range of tools
+
+
+    * cost saving
+    - total cost of ownership - less expense on electricity, cooling etc
+    - other ways to save costs - autoscaling
+
+    * global reach
+    - data centers in multiple countries
+
+    * availability
+    - expressed in % - 4 9s, 5 9s
+
+    * scalability
+    - ability to handle growth of users / work
+
+    * elasticity
+    - ability of a system to grow and shrink based on application demand
+
+    * agility
+    - ability to change rapidly based on changes to the market or environment
+    - add more capacity to production environment
+
+    * disaster recovery
+    - ability of a system to recover from failure within a period of time and how much data is lost
+
+
+    * capital expenditure (Capex) and Operational expenditure (Op Ex) benefits - Accounting
+    - Capex is money invested in assets (like computers) that return investment over time.
+    - Opex is the money spent every day on operating expenses.
+    - Consumption based model in Cloud computing
+        - in opex model we - pay by the minute
+                           - pay by the hour
+                           - pay per execution
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

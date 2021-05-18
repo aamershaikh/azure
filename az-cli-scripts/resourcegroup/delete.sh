@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Delete a resource group.
-az group delete --reource-group "rg-$1"
+az group delete --name "rg-$1"

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2060aa3-5eb9-4d14-9799-b8ac84a7d96c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/az-cli-scripts/resourcegroup/delete.sh" beforeDir="false" afterPath="$PROJECT_DIR$/az-cli-scripts/resourcegroup/delete.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/azure/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/azure/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +51,13 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="22" width="1280" height="774" key="#Project_Structure" timestamp="1611633360213">
+    <state x="319" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621311220485">
       <screen x="0" y="22" width="1280" height="774" />
     </state>
-    <state x="0" y="22" width="1280" height="774" key="#Project_Structure/0.22.1280.774/-359.-1058.1920.1058@0.22.1280.774" timestamp="1611633360213" />
-    <state x="0" y="96" key="new project wizard" timestamp="1611633372690">
-      <screen x="0" y="22" width="1280" height="774" />
+    <state x="319" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.22.1280.774/-359.-1058.1920.1058@0.22.1280.774" timestamp="1621311220485" />
+    <state x="255" y="-822" width="670" height="676" key="search.everywhere.popup" timestamp="1621313494523">
+      <screen x="-359" y="-1058" width="1920" height="1058" />
     </state>
-    <state x="0" y="96" key="new project wizard/0.22.1280.774/-359.-1058.1920.1058@0.22.1280.774" timestamp="1611633372690" />
+    <state x="255" y="-822" width="670" height="676" key="search.everywhere.popup/0.22.1280.774/-359.-1058.1920.1058@-359.-1058.1920.1058" timestamp="1621313494523" />
   </component>
 </project>
