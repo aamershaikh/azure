@@ -1,14 +1,16 @@
-1) Azure Fundamentals : AZ900
+1) Azure Fundamentals : AZ-900
         - Describe cloud concepts
         - Describe core azure services
         - Describe core solutions and management tools
         - Describe general and network security features
-        - Describe identity , governance , privance and compliance features
+        - Describe identity , governance , privacy and compliance features
         - Describe cost management and SLA
 
 
         What is cloud computing ?
         - Ability to rent computing resources on demand.
+        - delivery of computing services such as storage , databases, networking, software, analytics and intellignence over the internet.
+        - helps reduce operating costs and scale as needed.
 
         What is computing resources?
         - Windows and Linux servers
@@ -25,7 +27,7 @@
         etc 1000+ services
 
 
-***Describe cloud concepts***
+***Chapter 1 : Describe cloud concepts***
 
 - Benefits of cloud computing
     - Cost savings - both real and accounting
@@ -40,18 +42,24 @@
     * cost saving
     - total cost of ownership - less expense on electricity, cooling etc
     - other ways to save costs - autoscaling
+    - Cloud computing eliminates the capital expense of buying hardware and software and setting up and running on site data centers, server racks etc
 
     * global reach
     - data centers in multiple countries
 
-    * availability
+    * availability/performance
     - expressed in % - 4 9s, 5 9s
+    - ergularly upgraded hardware for fast and efficient conputing
+
+    * security
+    - broad set of policies and technologies that provide security for data, apps and infrastructure
 
     * scalability
     - ability to handle growth of users / work
 
     * elasticity
     - ability of a system to grow and shrink based on application demand
+    - usually automated - hence minimal effect on runtime.
 
     * agility
     - ability to change rapidly based on changes to the market or environment
@@ -59,15 +67,123 @@
 
     * disaster recovery
     - ability of a system to recover from failure within a period of time and how much data is lost
+    - data can be mirrored at multiple redundant sites on cloud provider network
 
 
-    * capital expenditure (Capex) and Operational expenditure (Op Ex) benefits - Accounting
+    * capital expenditure (Capex) and Operational expenditure (OpEx) benefits - Accounting
     - Capex is money invested in assets (like computers) that return investment over time.
     - Opex is the money spent every day on operating expenses.
     - Consumption based model in Cloud computing
         - in opex model we - pay by the minute
                            - pay by the hour
                            - pay per execution
+
+
+
+*** Catagories of cloud serves (paradigm) ****
+
+1) Infrastructure as a service (IAAS)
+    - virtual machines, networking, load balancer, firewalls
+    - does not include software services like databases
+
+2) Platform as a service (PaaS)
+    - upload the code packages and have them to run without access to hardware (WebApps, AppServices etc)
+
+3) Software as a service (SaaS)
+    - eg : Dropbox, backup services, google drive, google docs, Active directory
+    - Having access to products on the cloud
+
+**** Shared responsibility model **** - Refer diagram in chapter 8
+
+4) Serverless
+    - There are still servers....you just dont ever have to deal with them.
+    - even less access to server than PaaS.
+    - even with PaaS you have to choose an app service plan
+    - with PaaS scaling us your responsibility, in serverless, it is upto the cloud provider to autoscale
+    - basically serverless means not worrying about choosing scaling
+    - chances of paying 0$ if service is not used. Because we pay for execution in serverless. In appservice, we pay by the hour.
+    - Azure serverless offers
+        - azure functions
+        - serverless kubernetes
+        - SQL database serverless
+        - cosmos DB serverless
+
+
+****Types of cloud computing********
+1) public cloud
+    - azure owns the hardware on their network and infrastructure
+
+2) private cloud
+    - looks and acts like a cloud except customer owns or leases or has exclusive access to hardware . Eg ; Financial services companies prefer their own cloud.
+
+3) Hybrid cloud
+    - combination of public and private clouds, scale private infrastructure to the cloud.
+
+*** principle of economies at scale - the more of something you bit the cheaper it is to own and operate per unit.****
+
+
+
+*****Describe core azure services********
+
+Section 1 : Core azure architectural components
+
+        *) Regions - 60+ regions - not all accessible by everyone. Eg : china
+
+        *) region Pairs - backup concept
+            - each region has one other reqion whih is treated as its pair
+            - almost always in the same geography - data storage laws
+            - the data connection between region pairs is the highest speed available
+            - software rollouts are deployed to one region of a pat and the other is not touched
+            - if multiple reqions go down, one region of each pair is treated as a priority
+
+        *) Availibility zones
+            - one region has multiple AZones - each AZone has its own hardware, cooling etc.
+
+        *) Resource Groups
+            - Similar to folder strcuture
+            - Management goups
+                - subscriptions
+                    - resource groups
+                        - resources
+
+        *) Azure subscription
+            - subscription is a billing unit
+            - users have access to one or more subscriptions with different roles
+            - all resoures consumed by a subscription will be billed to the owner
+            - can be used to organize resources into completely distinct accounts
+
+        *) Management groups
+            -     we can manage governance models over a subscription using managment groups. eg : policies
+
+
+
+ - Azure resource manager (ARM)
+    -  This is how azure interacts with resources behind the scenes
+    - through Portal or command line or Visual code etc
+    - anything we do happens throgh azure resource manager API.
+    Azure resources - instance of service that you create that are yours to use
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
