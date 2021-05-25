@@ -1,76 +1,161 @@
-
-*****Describe core azure services********
-
-Section 1 : Core azure architectural components
-
-        *) Regions - 60+ regions - not all accessible by everyone. Eg : china
-        - defination : a set of data center within a letency defined perimeter and connected through a dedicated regional low latency network
-
-        *) region Pairs - backup concept
-            - each region has one other reqion whih is treated as its pair
-            - almost always in the same geography - data storage laws
-            - the data connection between region pairs is the highest speed available
-            - software rollouts are deployed to one region of a part and the other is not touched
-            - if multiple reqions go down, one region of each pair is treated as a priority
-
-        *) Availibility zones
-            - one region has multiple AZones - each AZone has its own hardware, cooling etc.
-            - unique physical location within a region. each Azone is made up of one or more data centers equipped with independant power cooling and networking.
-
-        *) Resource Groups
-            - Similar to folder strcuture
-            - Management goups
-                - subscriptions
-                    - resource groups
-                        - resources
-            - imporant points to consider for resource groups :
-                    - all resources in a RG should share the same lifecycle. deploy, update and delete them together.
-                    - one resource can exists in one RG
-                    - add/remove resource in RG anytime
-                    - move RG from one to another
-                    - resource in RG can be located in different regions than the resource group
-                    - resource group can be used to scope access control for administrative actions. we can assign azure policies, roles and resource locks.
-                    - you can deploy upto 800 instances of a resource types in each resource group
-                    - some resources can exists outside of resource group. these resources are deployed to subscrition, management, group or tenant. Only a specific types are supported at these scopes.
-                    - RG can be created via portal CLI or ARM template
-
-        *) Azure subscription
-            - subscription is a billing unit
-            - users have access to one or more subscriptions with different roles
-            - all resoures consumed by a subscription will be billed to the owner
-            - can be used to organize resources into completely distinct accounts
-
-        *) Management groups
-            -     we can manage governance models over a subscription using managment groups. eg : policies
+1) Azure Fundamentals : AZ-900
+        - Describe cloud concepts
+        - Describe core azure services
+        - Describe core solutions and management tools
+        - Describe general and network security features
+        - Describe identity , governance , privacy and compliance features
+        - Describe cost management and SLA
 
 
+        What is cloud computing ?
+        - Ability to rent computing resources on demand.
+        - delivery of computing services such as storage , databases, networking, software, analytics and intelligence over the internet.
+        - helps reduce operating costs and scale as needed.
 
- - Azure resource manager (ARM) - Defination  : its the deployment and management service for azure.
-    - provides a management layer that enables to create, update and delete resources in azure account.
-    - we can use management features like access control , locks, tags to secure and organize resources after deployment.
-    - This is how azure interacts with resources behind the scenes
-    - Tool to use for ARM : through Portal or command line or Visual code etc
-    - anything we do happens throgh azure resource manager API.
-    - benefits of using Azure resource manager
-            - manage infrstructure through declarative templates rather than scripts
-            - deploy and manage and monitor all the resource sof your solution as a group rather than handling them indiviually
-            - deploy the solution throughout the development lifecycle and have confidence that resources are deployed in a consistent state.
-            - define dependancies between resources so they are deployed in correct order
-            - apply rbac to all services natively via managment platform
-            - apply tags to organize resources
-            - clarify the organization billing by viewing costs
-    Azure resources - Defination : instance of service that you create that are yours to use
+        What is computing resources?
+        - Windows and Linux servers
+        - Unlimited storage
+        - Databases
+        - Queues
+        - Content Delivery network
+        - Batch Processing Jobs
+        - Big Data - Hadoop
+        - Media services
+        - Machine learning
+        - Chat bots
+        - Cognitive services
+        etc 1000+ services
 
+
+***Chapter 1 : Describe cloud concepts***
+
+- Benefits of cloud computing
+    - Cost savings - both real and accounting
+    - Agility
+    - availability
+    - security
+    - global reach
+    - range of ready on demand services
+    - range of tools
+
+
+    * cost saving
+    - total cost of ownership less - less expense on electricity, cooling etc
+    - other ways to save costs - autoscaling
+    - Cloud computing eliminates the capital expense of buying hardware and software and setting up and running on site data centers, server racks etc
+
+    * global reach
+    - data centers in multiple countries
+
+    * availability/performance
+    - expressed in % - 4 9s, 5 9s
+    - regularly upgraded hardware for fast and efficient computing
+    - availability checklist : Applications hould adhere to these (NFRs, quality attributes) - known as "Principles of reliability pillar"
+                - desfine and test the recovery targets - via SLAs , RTO, RPO etc
+                - Design applcations to be resistant to failures by recovering gracefully from failures
+                - Ensure required capacity and services are availae in targeted regions
+                - plan for disaster recovery
+                - Applications should meet reliability requirements
+                - applications sould meet reliability requirements
+                - recover from errors
+                - ensure networking and connectivity meets reliability reqiurements
 
 
 
+    * security
+    - broad set of policies and technologies that provide security for data, apps and infrastructure
+
+    * scalability -- > known as "performance efficiency pillar" -- for long term business needs
+    - ability to handle growth of users / work
+    - azure provides "" Azure Autoscale"" as its scaling service
+    - when using scalability you only need to predict the current average and peak times for your workload.
+    - payment plan options allow you to manage this prediction.
+    - You either pay per minute of per hour depending on the servce for a designated time period
+
+    * elasticity - short tactical terms
+    - ability of a system to grow and shrink based on application demand
+    - usually automated - hence minimal effect on runtime.
+
+    (difference between elasticity and scalability is that elasticity is for short term, tactical needs) while scalability is long term, strategic needs
+
+    * agility
+    - ability to change rapidly based on changes to the market or environment
+    - add more capacity to production environment
+
+    * disaster recovery
+    - ability of a system to recover from failure within a period of time and how much data is lost
+    - data can be mirrored at multiple redundant sites on cloud provider network
+    - key points in DR to keep in mind
+            - create and test a disaster recover plan on a regular basis using ket failure scenarios
+            - deisng disister recovery strategy to run most appliation with reduced functionality
+            - desin a backup srategy that is tailored to business requirements and circumstances of the application
+            - automate failover (process of switching prod to backup facility) and failback (process of returning production to its original location after disaster) steps and processes
+            - test and validate the failover and failback approcach successfully once
+
+
+    * capital expenditure (Capex) and Operational expenditure (OpEx) benefits - Accounting
+    - Capex is money invested in assets (like computers) that return investment over time.
+    - Opex is the money spent every day on operating expenses.
+    - Consumption based model in Cloud computing --> customers pay according to the amount of service that they use or consume.
+        - in opex model we - pay by the minute
+                           - pay by the hour
+                           - pay per execution
+    - economies of scale
+        - inverse relation between per unti fixed cost and the quantity produced
+        - principle of economies at scale - the more of something you bit the cheaper it is to own and operate per unit.****
+        - economies of scale
+                - efficient production
+                - reduction in promotion costs
+                - spread risks
+                - cheaper capital
+                - reduction in logistic cost
+                - buy in bulk
 
 
 
 
+*** Catagories of cloud serves (paradigm) ****
+
+1) Infrastructure as a service (IAAS)
+    - virtual machines, networking, load balancer, firewalls
+    - does not include software services like databases
+
+2) Platform as a service (PaaS)
+    - upload the code packages and have them to run without access to hardware (WebApps, AppServices etc)
+
+3) Software as a service (SaaS)
+    - eg : Dropbox, backup services, google drive, google docs, Active directory
+    - Having access to products on the cloud
+
+**** Shared responsibility model **** - Refer diagram in chapter 8
+
+4) Serverless
+    - There are still servers....you just dont ever have to deal with them.
+    - even less access to server than PaaS.
+    - even with PaaS you have to choose an app service plan
+    - with PaaS scaling is your responsibility, in serverless, it is upto the cloud provider to autoscale
+    - basically serverless means not worrying about choosing scaling
+    - chances of paying 0$ if service is not used. Because we pay for execution in serverless. In appservice, we pay by the hour.
+    - Azure serverless offers
+        - azure functions
+        - serverless kubernetes
+        - SQL database serverless
+        - cosmos DB serverless
+
+
+****Types of cloud computing********
+1) public cloud
+    - azure owns the hardware on their network and infrastructure
+
+2) private cloud
+    - looks and acts like a cloud except customer owns or leases or has exclusive access to hardware . Eg ; Financial services companies prefer their own cloud.
+
+3) Hybrid cloud
+    - combination of public and private clouds, scale private infrastructure to the cloud.
 
 
 
+***************************************************************************************************************************************************************
 
 
 
