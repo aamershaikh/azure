@@ -1,0 +1,91 @@
+
+*****Describe core azure services********
+
+Section 1 : Core azure architectural components
+
+        *) Regions - 60+ regions - not all accessible by everyone. Eg : china
+        - defination : a set of data center within a letency defined perimeter and connected through a dedicated regional low latency network
+
+        *) region Pairs - backup concept
+            - each region has one other reqion whih is treated as its pair
+            - almost always in the same geography - data storage laws
+            - the data connection between region pairs is the highest speed available
+            - software rollouts are deployed to one region of a part and the other is not touched
+            - if multiple reqions go down, one region of each pair is treated as a priority
+
+        *) Availibility zones
+            - one region has multiple AZones - each AZone has its own hardware, cooling etc.
+            - unique physical location within a region. each Azone is made up of one or more data centers equipped with independant power cooling and networking.
+
+        *) Resource Groups
+            - Similar to folder strcuture
+            - Management goups
+                - subscriptions
+                    - resource groups
+                        - resources
+            - imporant points to consider for resource groups :
+                    - all resources in a RG should share the same lifecycle. deploy, update and delete them together.
+                    - one resource can exists in one RG
+                    - add/remove resource in RG anytime
+                    - move RG from one to another
+                    - resource in RG can be located in different regions than the resource group
+                    - resource group can be used to scope access control for administrative actions. we can assign azure policies, roles and resource locks.
+                    - you can deploy upto 800 instances of a resource types in each resource group
+                    - some resources can exists outside of resource group. these resources are deployed to subscrition, management, group or tenant. Only a specific types are supported at these scopes.
+                    - RG can be created via portal CLI or ARM template
+
+        *) Azure subscription
+            - subscription is a billing unit
+            - users have access to one or more subscriptions with different roles
+            - all resoures consumed by a subscription will be billed to the owner
+            - can be used to organize resources into completely distinct accounts
+
+        *) Management groups
+            -     we can manage governance models over a subscription using managment groups. eg : policies
+
+
+
+ - Azure resource manager (ARM) - Defination  : its the deployment and management service for azure.
+    - provides a management layer that enables to create, update and delete resources in azure account.
+    - we can use management features like access control , locks, tags to secure and organize resources after deployment.
+    - This is how azure interacts with resources behind the scenes
+    - Tool to use for ARM : through Portal or command line or Visual code etc
+    - anything we do happens throgh azure resource manager API.
+    - benefits of using Azure resource manager
+            - manage infrstructure through declarative templates rather than scripts
+            - deploy and manage and monitor all the resource sof your solution as a group rather than handling them indiviually
+            - deploy the solution throughout the development lifecycle and have confidence that resources are deployed in a consistent state.
+            - define dependancies between resources so they are deployed in correct order
+            - apply rbac to all services natively via managment platform
+            - apply tags to organize resources
+            - clarify the organization billing by viewing costs
+    Azure resources - Defination : instance of service that you create that are yours to use
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
