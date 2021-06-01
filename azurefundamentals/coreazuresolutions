@@ -1,1 +1,86 @@
+Core solutions and management tools
 
+    Core solutions
+        - IOT solutions
+            - IOT Hub - eg thermostat sending messages to hub 
+            - IOT Central
+            - Azure sphere - a platform designed to work with connected devices
+                    - includes - a secure silicon chip
+                               - Sphere OS
+                               - Cloud based security services
+                               
+        - Big data and Analystics solutions
+            - Azure Synapse - formerly known as SQL data warehouse
+            - HD Insight - umbrella term used to refer to hadoop, spark and other big data technologies
+            - Azure Databricks - IDE on cloud
+            
+         - AI solutions
+            - Azure machine learning
+            - cognitive services
+            - azure bot services
+                  - natural language chabot service
+                  - database of FAQs
+                  - front end that allows people to ask questions and get answers
+                  
+          - Serverless solutions
+             - Azure functions
+             - azure logic apps - workflow based - eg : when http request is recd, test function, create blob
+             - event grid
+             
+          
+          - azure devops solutions
+             - azure devops
+             - github
+             - github actions
+                    - automate software workflows
+                    - what happens once someone checks in changes to the code?
+                    - possibly includes continius integrations
+                    - possibly includes automation compilation of code to check for errors
+                    - possibly includes running a suite of tests againt the code
+             - azure devtest labs
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
