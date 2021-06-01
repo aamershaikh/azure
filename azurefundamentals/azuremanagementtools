@@ -1,1 +1,69 @@
+Azure management tools
+    -Azure CLI - write scripts
+    -Powershell - write scripts
+    -Azure Portal- UI based
+    -Azure Cloud Shell - if we dont want to install powershell, we can o the scripting in the browser
+    -Azure Mobile App - mobile based. monitor servcices, run, start, shop commands
+    
+Azure Advisor - Provides insights into 
+                                      high availability, 
+                                      security,
+                                      reliability,
+                                      performance,
+                                      operational excellenence and 
+                                      costs
+                                      
 
+
+Managing azure with arm templates - IAAC concepts
+    - defination: the deployment and management servie for azure
+    - managemet layer that allows you to create, update and delete resoruces called "deployment"
+    - all actions that you tale to manage yout azure resources goes through arm layer
+
+
+Azure Monitor
+    - centralized dashboard for azure resources. for monitoring things that affect you
+
+
+Azure service health
+    - its like azure monotor for all of azure as a whole. for monitoring things that affect azure as a whole
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
