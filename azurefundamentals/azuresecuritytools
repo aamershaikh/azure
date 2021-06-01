@@ -1,0 +1,35 @@
+Azure security tools
+    - security features
+        - Azure security center
+                - unified infrastructure security management system that monitors and protects your systems inside and outside azure
+                - strenthen security
+                - protect against threats
+                - get secure faster
+                
+        - key vault
+                - central secure repository for your secrets , certificates and keys
+                
+        - azure sentinel - 
+                - centralizes all the log files from various resources
+                - analyses them to detect threats - eg someone giving wrong password continously
+                - allows you to run queries on those logs yourself
+                - investigate the incident
+                - orchestration and automation to fix these issues
+                
+        - azure dedicated hosts
+                - hardware that is dedicated to u
+                - you can reserve a machine and run multiple vurtual machines on it
+    
+    
+    - network security
+    
+    Concepts : defense in depth
+          
+    
+        - network security group
+              
+        - azure firewall
+        - azure ddos protection
+        
+    
+    
