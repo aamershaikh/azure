@@ -1,0 +1,198 @@
+Types of services:
+        compute services
+        networking services
+        storage services
+        database services
+        azure marketplace
+
+*) Compute services covered
+    - virtual machines - VM
+    - app services - Web Apps
+    - Azure container instances (ACI)
+    - Azure Kubernetes service (AKS)
+    - Windows virtual Desktop
+
+Compute means executing code in cloud
+
+        -) Virtual machines
+                - example of IAAS
+                - take an existing machine from your environment into the cloud - a copy
+                - windows or linux OS - several of each
+                - a slice of a physical machine shared with other customers - apartment is ours, but building being shared by everyone example
+                - full control over it, as if it was your machine
+
+                virtual machine types
+                    - over 200 to choose from
+                    - on the basis of number of cpu core, cpu speed, ram size, temporary disks, IOPS (IO per second) etc
+
+        -) App services
+                - example of PAAS
+                - a new paradigm for running code in cloud
+                - give your code and configuration to azure and they will run it
+                - promise of performance but no access to hardware
+                - give the code to azure and it will run it
+
+        -) containers
+                - another paradigm for running the code in cloud
+                - containers contain everything the app needs to run in a container image
+                - fastest and easiest way to deploy
+                - Azure container instance (ACI)
+                        - single instance , quickest way to deploy a container
+
+                - azure kubernetes service (AKS)
+                        - runs on a cluster of servers , enterprise grade
+
+
+        -) Windows virtual desktop
+                - desktop version of windows that runs in the cloud
+                - files available from anywhere
+                - can even see your desktop on iOS and Andriod or from web browser
+                - runs on azure
+
+
+*) Azure Networking services
+      - Virtual networks (VNET)
+      - VPN Gateway
+      - VNET Peering
+      - ExpressRoute
+
+      Types of networking services
+        - connectivity services  - how applications connect to each other
+                - types of connectivity services
+                    - virtual network (emulates a physical network). "MS global network" already exists, so VNET us just a software configuration.
+                            - vnet is a fundamental building block for private network
+                              which enables many types of azure resources such as azure virtual machines to securely communicate with each other.
+                            - benefits - scale, availability, isolation, filtering network traffic, routing network traffic and integration with azure services
+                            * - network and machine and the disk in a azure virtual network need to be in the same region.
+                            - Outbound connections : vnet can communicate outbound to the internet by default
+                            - Inbound connections : resource can communicate by assigning a public ip address or a public load balancer
+                            - communication between different azure resources happens thru :
+                                    - deployment of resources to virtual network (eg In VMs, AKS, App Service Environments - ASE)
+                                    - virtual network service endpoint - allow you to secure critical azure service resources to only a virtual network.
+                                    - VNET peering - connect virtual networks with each other thereby enabiling resources in either virtual network to comunicate with each other using vnet peering.
+                            - every virtual network has atleast one subnetwork
+
+
+
+                    - virtual private network - gateway
+                            - connecting two networks as if they were in the same network, uses a network gateway
+                            - point to site private network (VPN) - connection between VNET and a single computer in the network
+                            - site to site VPN - connection between vpn device and azure vpn gateway that is deployed in a virtual network.
+
+                    - expressroute
+                        - high speed private connection to azure. some more hardware is installed.
+
+
+        - protection services - only auth ppl have access
+                - DDos protection - denial of service attack protection. Shopping mall full example
+                - firewall
+                - network security group - name on the list in a club example. we include the ips that should be allowed.
+                - private link
+
+        - delivery services - helps deliver the application to another server (not in AZ900)
+                - Load balancer - distribute traffic evenly between multiple backend servers
+                - application gateway - a higher level of load balancer with an optional firewall
+                - content delivery network - stores common static files (images etc) on the edge, closer to theu used for imporved performance
+                - azure front door service - load balancer, CDN and firewall all in one
+
+        - monitring services - monitoring of service
+                - network watcher
+                - expressroute monitr
+                - azure monitor
+
+
+
+*) Azure storage services
+    - container (blob) storage
+            - general purpose v2
+                    - blobs
+                    - tables
+                    - queues
+                    - files
+            - azure data lake Gen2
+                    - cheapest type of storage
+                    - pay per gb
+
+    - disk storage
+            - azure virtual machne disks
+            - managed disks
+            - rserve capacity in advance
+            - optimized to hard disks
+
+    - file storage
+            - Azure files offers fully managed file shares in the cloud that are accessible via industry standard server message block (SMB) protocol or network file syytem (NFS) protocol
+            - use cases : replace file server with a serverless azure file share
+
+
+    - storage tiers
+            - data stored in the cloud grows at an exponential pace. to manage costs for your expanding storage needs, its helpful to organize the data on the attributes like frequency of access and planned retention period to optimize the costs. data stored in the cloud can be different based on how its generated, procesed and accessed over its lifetime.
+            - some data is activiely used, some is accessed frquently but its usage decreases over a period of time. some remins idle in clould and is rarely used.
+            with hot, cool and archive access tiers, azure blob storage addressess this needd for diffrentiated access tiers with seperate pricing models.
+            - access tiers for azure blob storage
+                - hot - optimized for storing data that is accessed frequently
+                - cool - optimized for storing data that is infrequently accessed and stored for at least 30 days
+                - archive - optimized for storing data that is rarely accessed and stored for at least 180 days with flexible latency requirements, on the order of hours
+            - storage tiers is supported in blob storage and GPV2 accounts. GPv1 does not support tiering.
+
+
+*) Database service
+    - cosmos db
+        - no sql database
+        - extremenly fast storage
+        - designed for modern applications such as mobile video games, social networks
+        - Multi modal - no schema required
+        - supports many open source apis and protocols
+
+    - sql db
+        - runs on the sql server engine underneath
+        - relational db
+        - database as a service
+        - easy to replicate
+        - easy to scale
+        - easy to migrate from sql server on prem
+
+    - azure database for MySQL
+        - managed mysql database
+        - common open source db
+        - makes migration to the cloud easier if u rely on this one
+        - wordpress uses it
+
+    - Azure database for Postgres
+        - managed post gres database
+        - open source db
+        - has better support for clusters and more complex server setups
+        - makes migration to the cloud easier
+
+    - SQL managed instance
+        - most compatible with existing sql server
+        - minimal code changes
+        - fully managed by azure
+        - always upto date
+
+
+*) azure marketplace
+    - SAAS provided here by microsoft and its parners. eg : red hat etc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

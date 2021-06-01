@@ -4,7 +4,7 @@
 Section 1 : Core azure architectural components
 
         *) Regions - 60+ regions - not all accessible by everyone. Eg : china
-        - defination : a set of data center within a letency defined perimeter and connected through a dedicated regional low latency network
+        - defination : a set of data center within a latency defined perimeter and connected through a dedicated regional low latency network
 
         *) region Pairs - backup concept
             - each region has one other reqion whih is treated as its pair
@@ -19,11 +19,11 @@ Section 1 : Core azure architectural components
 
         *) Resource Groups
             - Similar to folder strcuture
-            - Management goups
+            - Management groups
                 - subscriptions
                     - resource groups
                         - resources
-            - imporant points to consider for resource groups :
+            - important points to consider for resource groups :
                     - all resources in a RG should share the same lifecycle. deploy, update and delete them together.
                     - one resource can exists in one RG
                     - add/remove resource in RG anytime
@@ -31,8 +31,9 @@ Section 1 : Core azure architectural components
                     - resource in RG can be located in different regions than the resource group
                     - resource group can be used to scope access control for administrative actions. we can assign azure policies, roles and resource locks.
                     - you can deploy upto 800 instances of a resource types in each resource group
-                    - some resources can exists outside of resource group. these resources are deployed to subscrition, management, group or tenant. Only a specific types are supported at these scopes.
+                    - some resources can exists outside of resource group. these resources are deployed to subscrpition, management group or tenant. Only a specific types are supported at these scopes.
                     - RG can be created via portal CLI or ARM template
+
 
         *) Azure subscription
             - subscription is a billing unit
@@ -53,13 +54,15 @@ Section 1 : Core azure architectural components
     - anything we do happens throgh azure resource manager API.
     - benefits of using Azure resource manager
             - manage infrstructure through declarative templates rather than scripts
-            - deploy and manage and monitor all the resource sof your solution as a group rather than handling them indiviually
+            - deploy and manage and monitor all the resources of your solution as a group rather than handling them indiviually
             - deploy the solution throughout the development lifecycle and have confidence that resources are deployed in a consistent state.
             - define dependancies between resources so they are deployed in correct order
-            - apply rbac to all services natively via managment platform
+            - apply rbac (role based access control) to all services natively via managment platform
             - apply tags to organize resources
             - clarify the organization billing by viewing costs
-    Azure resources - Defination : instance of service that you create that are yours to use
+    Azure resources - Defination : instance of service that you create that are yours to use. For eg: VM, storage etc
+
+
 
 
 

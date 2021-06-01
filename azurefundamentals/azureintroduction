@@ -47,16 +47,16 @@
     * global reach
     - data centers in multiple countries
 
-    * availability/performance
+    * availability/performance - (principles of reliability pillar)
     - expressed in % - 4 9s, 5 9s
     - regularly upgraded hardware for fast and efficient computing
-    - availability checklist : Applications hould adhere to these (NFRs, quality attributes) - known as "Principles of reliability pillar"
-                - desfine and test the recovery targets - via SLAs , RTO, RPO etc
+    - availability checklist : Applications should adhere to these (NFRs, quality attributes) - known as "Principles of reliability pillar".
+    In a cloud application it is necessary to define the below so as to be prepared of any downtime
+                - define and test the recovery targets - via SLAs , RTO - recovery time objective, RPO - recovery point objective etc
                 - Design applcations to be resistant to failures by recovering gracefully from failures
-                - Ensure required capacity and services are availae in targeted regions
+                - Ensure required capacity and services are available in targeted regions
                 - plan for disaster recovery
                 - Applications should meet reliability requirements
-                - applications sould meet reliability requirements
                 - recover from errors
                 - ensure networking and connectivity meets reliability reqiurements
 
@@ -86,11 +86,11 @@
     - ability of a system to recover from failure within a period of time and how much data is lost
     - data can be mirrored at multiple redundant sites on cloud provider network
     - key points in DR to keep in mind
-            - create and test a disaster recover plan on a regular basis using ket failure scenarios
-            - deisng disister recovery strategy to run most appliation with reduced functionality
-            - desin a backup srategy that is tailored to business requirements and circumstances of the application
+            - create and test a disaster recover plan on a regular basis using key failure scenarios
+            - design disaster recovery strategy to run most appliation with reduced functionality
+            - desin a backup strategy that is tailored to business requirements and circumstances of the application
             - automate failover (process of switching prod to backup facility) and failback (process of returning production to its original location after disaster) steps and processes
-            - test and validate the failover and failback approcach successfully once
+            - test and validate the failover and failback approcach successfully once/multiple times
 
 
     * capital expenditure (Capex) and Operational expenditure (OpEx) benefits - Accounting
@@ -101,8 +101,8 @@
                            - pay by the hour
                            - pay per execution
     - economies of scale
-        - inverse relation between per unti fixed cost and the quantity produced
-        - principle of economies at scale - the more of something you bit the cheaper it is to own and operate per unit.****
+        - inverse relation between per unit fixed cost and the quantity produced
+        - principle of economies at scale - the more of something you buy the cheaper it is to own and operate per unit.****
         - economies of scale
                 - efficient production
                 - reduction in promotion costs

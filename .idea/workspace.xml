@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/azurefundamentals" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f2060aa3-5eb9-4d14-9799-b8ac84a7d96c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/azure/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/azure/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/azurefundamentals/azureintroduction" beforeDir="false" afterPath="$PROJECT_DIR$/azurefundamentals/azureintroduction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/azurefundamentals/coreazureservices" beforeDir="false" afterPath="$PROJECT_DIR$/azurefundamentals/coreazureservices" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +42,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -50,11 +77,39 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/azurefundamentals" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="319" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621311220485">
-      <screen x="0" y="22" width="1280" height="774" />
+    <state x="120" y="-789" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1622371183541">
+      <screen x="-359" y="-1058" width="1920" height="1058" />
     </state>
+    <state x="120" y="-789" key="#com.intellij.fileTypes.FileTypeChooser/0.22.1280.774/-359.-1058.1920.1058@-359.-1058.1920.1058" timestamp="1622371183541" />
     <state x="319" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.22.1280.774/-359.-1058.1920.1058@0.22.1280.774" timestamp="1621311220485" />
+    <state x="356" y="-936" key="git4idea.branch.GitSmartOperationDialog" timestamp="1622348903966">
+      <screen x="-359" y="-1058" width="1920" height="1058" />
+    </state>
+    <state x="356" y="-936" key="git4idea.branch.GitSmartOperationDialog/0.22.1280.774/-359.-1058.1920.1058@-359.-1058.1920.1058" timestamp="1622348903966" />
     <state x="255" y="-822" width="670" height="676" key="search.everywhere.popup" timestamp="1621313494523">
       <screen x="-359" y="-1058" width="1920" height="1058" />
     </state>
