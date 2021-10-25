@@ -1,0 +1,40 @@
+SAAS provided by Azure
+
+IOT
+  - IOT Hub
+  - IOT Central
+  - Azure Sphere
+      - platform designed to work with connected devides
+       - includes a secure silicon chip and sphere OS
+       
+Big data and analytics
+   - Azure synapse analytics (formerly SQL data warehouse)
+   - HD Insight - includes hadoop, kafka etc all Big data tools
+   - Azure databricks - needs to create cluster in databricks. Can run queries inside command lets
+   
+Artificail intellingence
+  - Azure machine learning
+  - cognitive services
+  - azure bot services
+      - natural language chatbot service
+      - database of FAQ
+      - front end that allows perople to ask questons and get answers
+      
+      
+Serverless Computing - it still contains servers. its just that they are hidden from you. User is not in control of the confgiguration of servers
+   - azure functions - triggers - HTTP triggers
+   - azure logic apps - workflow service. connector between dfferent services in azure. when http request is recd, run a azure function, store result in blob storage. takes care of executing steps
+   - event grid 
+   
+
+DevOps
+  - Azure DevOps
+  - Github
+  - Github actions
+  - azure devtest labs
+  
+  
+      
+  
+ 
+   
