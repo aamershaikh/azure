@@ -19,15 +19,58 @@ Azure security tools
         - azure dedicated hosts
                 - hardware that is dedicated to u
                 - you can reserve a machine and run multiple vurtual machines on it
-    
-    
-    - network security
-    
-    Concepts : defense in depth
+  
+ Concepts : defense in depth (bottom up)
+                    - having securoty layers
+                        - data sec - virtual network endpoint
+                        - application sec - api management
+                        - compute - limit remote desktop access, windows updates
+                        - network - NSG, use of subnets, deny by default
+                        - perimeter - DDOS, firewalls
+                        - identity and access - Azure AD
+                        - phsical - doorlocks, access cards
+                        
+                        
+                        
+    Types of defense in depth
+        - Identity and Access
+                - Role based access
+                - MFA
+                - central identity management
+                - Identity Protection
+                - Priveledged Identity Management
+                
+         - Apps and Data Security
+                - Encrytion
+                - confidential computing
+                - Key management
+                - Certificate management
+                - information protection
+                
+                
+         - Network security
+               - DDOS protection
+               - NSG firewall
+               - WebApp firewall
+               - private connections
+               - network segmentation
+               
+          - Threat Protection
+                - Anti malware
+                - AI based Detection and response
+                - cloud workload protection
+                - SQL threat protection
+                - IOT securoty
+            
+          - Securoty Management
+                - Log management
+                - Securty posture assessment
+                - Policy and Governance
+                - Regulatory compliance
+                - SIEM
           
     
-        - network security group
-              
+        - network security group      
         - azure firewall
         - azure ddos protection
         
