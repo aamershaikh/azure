@@ -23,6 +23,16 @@ Managing azure with arm templates - IAAC concepts
 
 Azure Monitor
     - centralized dashboard for azure resources. for monitoring things that affect you
+    
+    
+    
+    
+    Application      -------------                       
+    OS               -------------            Azure Monitor
+    Azure Resource   -------------
+    Azure Subscription-------------
+    Az Tenant           -------------
+
 
 
 Azure service health
